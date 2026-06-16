@@ -1,0 +1,131 @@
+.fiches {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  min-height: calc(100vh - 60px);
+}
+
+.fiches h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.subtitle {
+  text-align: center;
+  color: #666;
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
+.subject-filter {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.filter-btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: 2px solid #9b59b6;
+  background-color: white;
+  color: #9b59b6;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+
+.filter-btn.active {
+  background-color: #9b59b6;
+  color: white;
+}
+
+.filter-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(155, 89, 182, 0.3);
+}
+
+.fiches-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.fiche-item {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.fiche-item:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+.fiche-content h3 {
+  font-size: 1.3rem;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.fiche-level {
+  font-size: 0.9rem;
+  color: #9b59b6;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.fiche-description {
+  color: #666;
+  line-height: 1.5;
+}
+
+.fiche-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.download-btn {
+  padding: 10px 20px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
+}
+
+.download-btn:hover {
+  background-color: #c0392b;
+}
+
+@media (max-width: 768px) {
+  .fiches h1 {
+    font-size: 2rem;
+  }
+
+  .fiche-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .fiche-actions {
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .download-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
